@@ -1,4 +1,8 @@
 # Django settings for costumenes project.
+import os
+
+PROJECT_DIR = os.path.abspath(os.path.dirname(__file__))
+PROJECT_NAME = os.path.basename(PROJECT_DIR)
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -48,7 +52,7 @@ USE_TZ = True
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
-MEDIA_ROOT = ''
+MEDIA_ROOT = os.path.join(PROJECT_DIR, 'media/')
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.

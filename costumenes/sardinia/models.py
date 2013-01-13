@@ -1,4 +1,6 @@
 import os
+import uuid
+
 from django.db import models
 
 # A list of sardinian's regions
@@ -54,15 +56,9 @@ COSTUME_TIPOLOGY = (
 )
 
 #This function will return the path based on the "comune" and "costume" value
-def get_upload_path(self, filename):
-	print 'the filename: %s', filename
-	ext = filename.split('.')[-1]
-	filename = "%s%s.%s" % ('img', self.pk, ext)
-	
-    #	return os.path.join(
-        #    'images', self.comune, self.sesso, self.tipologia, filename
-        #images/     john/                johnchannel/       birthday/          img1.jpg
-#)
+def original_directory_generator(instance, path):                
+        return 'photos/%s/%s/%s.jpg' %(instance.comune.nome.lower(),
+        instance.tipologia.lower(), uuid.uuid4())
 
 class Comune(models.Model):
 	nome = models.CharField(max_length=100)
@@ -80,7 +76,8 @@ class Photo(models.Model):
 	comune = models.ForeignKey(Comune)
 	sesso = models.CharField(max_length=20, choices=COSTUME_SEX)
 	tipologia = models.CharField(max_length=50, choices=COSTUME_TIPOLOGY)
-	img = models.ImageField(upload_to=get_upload_path)
+	img = models.ImageField("path immagine", upload_to=original_directory_generator)
+	titolo = models.CharField(max_length=100)
 	descrizione = models.TextField()
 	data_scatto = models.DateTimeField()
 	data_inserimento = models.DateTimeField(auto_now_add=True)
@@ -90,7 +87,7 @@ class Photo(models.Model):
 	foto_copertina = models.CharField(max_length=2, choices=SI_NO, default="No")
 	
 	def __unicode__(self):
-		return "%s - %s" % (self.comune, self.tipologia)
+		return "%s - %s - %s" % (self.comune, self.tipologia.replace("_", " "), self.titolo)
     
 	class Meta:
 		verbose_name_plural = "foto"
