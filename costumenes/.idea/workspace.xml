@@ -22,10 +22,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sardinia/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="0" selection-start="3598" selection-end="3598" vertical-scroll-proportion="0.0">
+            <state line="105" column="0" selection-start="3598" selection-end="3598" vertical-scroll-proportion="2.2992702">
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -33,10 +33,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/costumenes/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="4" selection-start="632" selection-end="632" vertical-scroll-proportion="0.30656934">
+            <state line="23" column="68" selection-start="1236" selection-end="1236" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -295,19 +295,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sardinia/models.py">
+    <entry file="file://$PROJECT_DIR$/costumenes/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="0" selection-start="3598" selection-end="3598" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+        <state line="23" column="68" selection-start="1236" selection-end="1236" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/costumenes/urls.py">
+    <entry file="file://$PROJECT_DIR$/sardinia/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="4" selection-start="632" selection-end="632" vertical-scroll-proportion="0.30656934">
-          <folding />
+        <state line="105" column="0" selection-start="3598" selection-end="3598" vertical-scroll-proportion="2.2992702">
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
