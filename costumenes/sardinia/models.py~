@@ -91,8 +91,6 @@ class Photo(models.Model):
     #        format='JPEG', quality=90, cache_to=original_directory_generator(true))
     num_views = models.PositiveIntegerField(editable=False, default=0)
     titolo = models.CharField(max_length=100)
-
-
     descrizione = models.TextField()
     data_scatto = models.DateTimeField()
     data_inserimento = models.DateTimeField(auto_now_add=True)
