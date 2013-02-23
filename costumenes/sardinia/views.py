@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9a9c5766259deb65f1164cb9bfd0975043922dd7
 from django.http import HttpResponse, HttpResponseForbidden, HttpResponseServerError
 from django.utils import simplejson
 from django.shortcuts import render_to_response
@@ -32,6 +35,19 @@ def get_province():
 
 	resp = simplejson.dump(pl)
 	return HttpResponse(resp, response_type="application/json")
+
+def get_comuni():
+	comuni_json = []
+	comuni = Comune.objects.all()
+
+	for comune in comuni:
+		dict = {}
+		dict['id'] = comune.pk
+		dict['nome'] = comune.nome
+		comuni_json.append(dict)
+
+	resp = simplejson.dump(comuni_json)
+	return HttpResponse (resp, response_type="application/json")
 
 
 def get_comune_regione(rg):
@@ -72,6 +88,7 @@ def get_tipicostume_comune(co):
 
 
 
+<<<<<<< HEAD
 
 
 
@@ -83,3 +100,6 @@ def get_tipicostume_comune(co):
 
 
 
+=======
+        return HttpResponse (resp,response_type="application/json")
+>>>>>>> 9a9c5766259deb65f1164cb9bfd0975043922dd7
