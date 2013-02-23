@@ -6,7 +6,7 @@ lista comuni;;lista di tutti i comuni presenti nel db;
 ;;lista di tutti i comuni appartenenti a una determinata regione;x
 ;;lista di tutti i comuni appartenenti a una determinata provincia;x
 ;;;
-lista costumi;;lista dei costumi di un comune;
+lista costumi;;lista dei costumi di un comune;x
 ;;lista degli ultimi costumi inseriti (con n dynamico);
 ;;lista di tutti i costumi di un genere (femminile / maschile);
 ;;lista di tutti i costumi di un genere (femminile / maschile) di un comune;
