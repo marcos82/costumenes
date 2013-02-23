@@ -1,9 +1,9 @@
 import os
 import uuid
 
-from imagekit.models import ImageSpecField
-from imagekit.processors import ResizeToFill
-from imagekit.processors import resize, Adjust, Crop
+#from imagekit.models import ImageSpecField
+#from imagekit.processors import ResizeToFill
+#from imagekit.processors import resize, Adjust, Crop
 
 from django.db import models
 
@@ -83,9 +83,9 @@ class Photo(models.Model):
     comune = models.ForeignKey(Comune)
     sesso = models.CharField(max_length=20, choices=COSTUME_SEX)
     tipologia = models.CharField(max_length=50, choices=COSTUME_TIPOLOGY)
-    img = models.ImageField("path immagine", upload_to=original_directory_generator(False))
-    thumbnail = ImageSpecField(source='img', processors=[Crop(100, 50)], format='JPEG', options={'quality': 90}
-        , cache_to=original_directory_generator(True))
+    #img = models.ImageField("path immagine", upload_to=original_directory_generator(False))
+    #thumbnail = ImageSpecField(source='img', processors=[Crop(100, 50)], format='JPEG', options={'quality': 90}
+     #   , cache_to=original_directory_generator(True))
     #thumbnail = ImageSpec([Adjust(contrast=1.2, sharpness=1.1),
     #        resize.Crop(50, 50)], image_field='img',
     #        format='JPEG', quality=90, cache_to=original_directory_generator(true))
