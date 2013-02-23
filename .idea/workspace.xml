@@ -2,7 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de33d4fe-1bcd-42ca-b04a-3a5ef52d3ede" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/costumenes/costumenes/media/photos/gavoi/vedova/c833302c-5437-4103-85a3-802afed845fe.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/costumenes/costumenes/media/photos/gavoi/sposa/dd24a438-12f9-421c-b76d-e3cfd0185903.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/costumenes/.idea/codeStyleSettings.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/costumenes.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/other.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/testrunner.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/costumenes/costumenes/media/photos/gavoi/sposa/ee04253d-9d1c-4bbc-bce8-2af22dfc22f9.jpg" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/costumenes/costumenes/urls.py~" afterPath="$PROJECT_DIR$/costumenes/costumenes/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/costumenes/sardinia/views.py" afterPath="$PROJECT_DIR$/costumenes/sardinia/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/costumenes/.idea/workspace.xml" afterPath="$PROJECT_DIR$/costumenes/.idea/workspace.xml" />
     </list>
     <ignored path="costumenes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,10 +44,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/costumenes/sardinia/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="32" selection-start="1439" selection-end="1439" vertical-scroll-proportion="0.0">
+            <state line="79" column="0" selection-start="1775" selection-end="1775" vertical-scroll-proportion="0.79216355">
               <folding>
                 <element signature="e#1#85#0" expanded="true" />
               </folding>
@@ -38,10 +55,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/costumenes/sardinia/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="65" selection-start="2910" selection-end="2910" vertical-scroll-proportion="0.07665505">
+            <state line="90" column="65" selection-start="2910" selection-end="2910" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -452,20 +469,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/costumenes/sardinia/views.py">
+    <entry file="file://$PROJECT_DIR$/costumenes/sardinia/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="32" selection-start="1439" selection-end="1439" vertical-scroll-proportion="0.0">
+        <state line="90" column="65" selection-start="2910" selection-end="2910" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#1#85#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/costumenes/sardinia/models.py">
+    <entry file="file://$PROJECT_DIR$/costumenes/sardinia/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="65" selection-start="2910" selection-end="2910" vertical-scroll-proportion="0.07665505">
+        <state line="79" column="0" selection-start="1775" selection-end="1775" vertical-scroll-proportion="0.79216355">
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#1#85#0" expanded="true" />
           </folding>
         </state>
       </provider>

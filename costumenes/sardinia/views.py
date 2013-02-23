@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> 9a9c5766259deb65f1164cb9bfd0975043922dd7
 from django.http import HttpResponse, HttpResponseForbidden, HttpResponseServerError
 from django.utils import simplejson
 from django.shortcuts import render_to_response
@@ -81,14 +78,6 @@ def get_tipicostume_comune(co):
 	return HttpResponse (resp, "applicatione/json")
 
 
-
-
-
-
-
-
-
-<<<<<<< HEAD
 
 
 
