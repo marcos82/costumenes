@@ -1,8 +1,10 @@
 import os
 import uuid
 
+
 from imagekit.models import ImageSpecField
 from imagekit.processors import Crop
+
 
 from django.db import models
 
@@ -82,10 +84,12 @@ class Photo(models.Model):
     comune = models.ForeignKey(Comune)
     sesso = models.CharField(max_length=20, choices=COSTUME_SEX)
     tipologia = models.CharField(max_length=50, choices=COSTUME_TIPOLOGY)
+
     img = models.ImageField("path immagine", upload_to=original_directory_generator)
     # the thumbnail is not saved, it's cropped at runtime. Check if it can be slower with many images
     thumbnail = ImageSpecField(processors=[Crop(100, 50)], image_field='img', format='JPEG',
                                options={'quality': 90}, cache_to=original_directory_generator_thumb)
+
     num_views = models.PositiveIntegerField(editable=False, default=0)
     titolo = models.CharField(max_length=100)
 
