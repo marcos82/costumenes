@@ -33,7 +33,7 @@ def get_province():
         return HttpResponse(resp, response_type="application/json")
 
 def get_comuni():
-	comuni_json = {}
+	comuni_json = []
 	comuni = Comune.objects.all()
 
 	for comune in comuni:
