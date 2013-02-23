@@ -70,11 +70,14 @@ def get_comune_province(pr):
 def get_tipicostume_comune(co):
 
 	tipi = []
+	dict = {}
 	comune = Comune.objects.get(pk=co)
 	for a in Photo.comune_set.all().order_by('tipologia').distinct('tipologia'):
 		tipi.append(tipologia)
+	dict['id']=co
+	dict['tipi']=tipi
 
-	resp = simplejson.dump(tipi)
+	resp = simplejson.dump(dict)
 	return HttpResponse (resp, "applicatione/json")
 
 
