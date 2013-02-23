@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from django.http import HttpResponse, HttpResponseForbidden, HttpResponseServerError
 from django.utils import simplejson
 from django.shortcuts import render_to_response
@@ -50,3 +51,7 @@ def get_comune_regione(rg):
 
 
 #
+=======
+
+import sardinia.models.SA# Create your views here.
+>>>>>>> fa2afd0091a2b9609ce263a243a25b8405f1a6a1
