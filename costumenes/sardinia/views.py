@@ -32,6 +32,19 @@ def get_province():
 
         return HttpResponse(resp, response_type="application/json")
 
+def get_comuni():
+	comuni_json = {}
+	comuni = Comune.objects.all()
+
+	for comune in comuni:
+		dict = {}
+		dict['id'] = comune.pk
+		dict['nome'] = comune.nome
+		comuni_json.append(dict)
+
+	resp = simplejson.dump(comuni_json)
+	return HttpResponse (resp, response_type="application/json")
+
 
 def get_comune_regione(rg):
         cr = []

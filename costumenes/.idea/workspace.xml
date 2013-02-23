@@ -6,9 +6,9 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/models.py" changelist="78bbaa3d-3115-40aa-b985-3107f5f3ae1b" time="1361111010337" ignored="false" />
     <file path="/urls.py" changelist="78bbaa3d-3115-40aa-b985-3107f5f3ae1b" time="1361032579234" ignored="false" />
-    <file path="/views.py" changelist="78bbaa3d-3115-40aa-b985-3107f5f3ae1b" time="1361037409367" ignored="false" />
+    <file path="/views.py" changelist="78bbaa3d-3115-40aa-b985-3107f5f3ae1b" time="1361633705369" ignored="false" />
     <file path="/Django Console" changelist="78bbaa3d-3115-40aa-b985-3107f5f3ae1b" time="1361101068246" ignored="false" />
-    <file path="/a.py" changelist="78bbaa3d-3115-40aa-b985-3107f5f3ae1b" time="1361100267560" ignored="false" />
+    <file path="/a.py" changelist="78bbaa3d-3115-40aa-b985-3107f5f3ae1b" time="1361634131846" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,11 +25,13 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/costumenes/settings.py">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sardinia/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="15" selection-start="426" selection-end="426" vertical-scroll-proportion="-2.250366">
-              <folding />
+            <state line="40" column="30" selection-start="961" selection-end="961" vertical-scroll-proportion="0.3762811">
+              <folding>
+                <element signature="e#0#84#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,46 +140,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="imagekit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="costumenes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="costumenes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imagekit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fields" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="costumenes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="costumenes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="costumenes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -191,7 +153,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="editor.preferences.appearance" />
+    <property name="options.lastSelected" value="preferences.sourceCode.Python" />
     <property name="FullScreen" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -479,15 +441,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sardinia/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="67" selection-start="1352" selection-end="1352" vertical-scroll-proportion="0.8682284">
-          <folding>
-            <element signature="e#0#84#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/costumenes/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="0" selection-start="463" selection-end="463" vertical-scroll-proportion="0.329429">
@@ -499,6 +452,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="15" selection-start="426" selection-end="426" vertical-scroll-proportion="-2.250366">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sardinia/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="30" selection-start="961" selection-end="961" vertical-scroll-proportion="0.3762811">
+          <folding>
+            <element signature="e#0#84#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
