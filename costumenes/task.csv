@@ -2,7 +2,7 @@ lista regioni;;lista di tutte le regioni presenti nel models.py;x
 ;;;
 lista province;;lista di tutte le province presenti nel models.py;x
 ;;;
-lista comuni;;lista di tutti i comuni presenti nel db;
+lista comuni;;lista di tutti i comuni presenti nel db;x
 ;;lista di tutti i comuni appartenenti a una determinata regione;x
 ;;lista di tutti i comuni appartenenti a una determinata provincia;x
 ;;;

@@ -80,18 +80,14 @@ def get_tipicostume_comune(co):
 	resp = simplejson.dump(dict)
 	return HttpResponse (resp, "applicatione/json")
 
+def get_lastest(n):
+	lastest = []
+	lista = Photo.objects.all().order_by('data_inserimento').distinct('comune')
+	for a in lista[0:n]:
+		lastest.append({"comune":a.comune,"foto":a.pk,"sesso":a.sesso, "tipo":a.tipo})
+
+	resp = simplejson.dump(lastest)
+	return HttpResponse (resp, "application/json")
 
 
 
-
-
-
-
-
-
-
-
-
-=======
-        return HttpResponse (resp,response_type="application/json")
->>>>>>> 9a9c5766259deb65f1164cb9bfd0975043922dd7
