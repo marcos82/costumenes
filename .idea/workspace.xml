@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de33d4fe-1bcd-42ca-b04a-3a5ef52d3ede" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/costumenes/.~lock.task.csv#" afterPath="$PROJECT_DIR$/costumenes/.~lock.task.csv#" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/costumenes/task.csv" afterPath="$PROJECT_DIR$/costumenes/task.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/costumenes/sardinia/views.py" afterPath="$PROJECT_DIR$/costumenes/sardinia/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="costumenes.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="de33d4fe-1bcd-42ca-b04a-3a5ef52d3ede" time="1361745405076" ignored="false" />
-    <file path="/views.py" changelist="de33d4fe-1bcd-42ca-b04a-3a5ef52d3ede" time="1361749085836" ignored="false" />
+    <file path="/views.py" changelist="de33d4fe-1bcd-42ca-b04a-3a5ef52d3ede" time="1361750049217" ignored="false" />
     <file path="/Python Console" changelist="de33d4fe-1bcd-42ca-b04a-3a5ef52d3ede" time="1361039558977" ignored="false" />
     <file path="/models.py" changelist="de33d4fe-1bcd-42ca-b04a-3a5ef52d3ede" time="1361038537155" ignored="false" />
     <file path="/a.py" changelist="de33d4fe-1bcd-42ca-b04a-3a5ef52d3ede" time="1361639811616" ignored="false" />
@@ -32,7 +31,7 @@
       <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/costumenes/sardinia/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="50" selection-start="2645" selection-end="2645" vertical-scroll-proportion="0.94889265">
+            <state line="109" column="3" selection-start="2660" selection-end="2660" vertical-scroll-proportion="0.56558776">
               <folding>
                 <element signature="e#1#85#0" expanded="true" />
               </folding>
@@ -471,7 +470,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/costumenes/sardinia/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="50" selection-start="2645" selection-end="2645" vertical-scroll-proportion="0.94889265">
+        <state line="109" column="3" selection-start="2660" selection-end="2660" vertical-scroll-proportion="0.56558776">
           <folding>
             <element signature="e#1#85#0" expanded="true" />
           </folding>
