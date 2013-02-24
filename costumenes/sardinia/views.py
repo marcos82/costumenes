@@ -98,6 +98,13 @@ def get_all_sex(s):
 	resp=simplejson(ls)
 	return HttpResponse (resp, "application/json")
 
+def get_types(comu, sess):
+	lista = Photo.objects.all().filter(comune=comu).filter(sesso=sess)
+	for a in lista:
+		ls.append({"comune":a.comune, "foto":a.pk, "sesso":a.sesso, "tipo":a.tipologia})
+
+	resp=simplejson(ls)
+	return HttpResponse (resp, "application/json")
 
 
 

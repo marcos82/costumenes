@@ -7,7 +7,7 @@ lista comuni;;lista di tutti i comuni presenti nel db;x
 ;;lista di tutti i comuni appartenenti a una determinata provincia;x
 ;;;
 lista costumi;;lista dei costumi di un comune;x
-;;lista degli ultimi costumi inseriti (con n dynamico);
-;;lista di tutti i costumi di un genere (femminile / maschile);
-;;lista di tutti i costumi di un genere (femminile / maschile) di un comune;
+;;lista degli ultimi costumi inseriti (con n dynamico);x
+;;lista di tutti i costumi di un genere (femminile / maschile);x
+;;lista di tutti i costumi di un genere (femminile / maschile) di un comune;x
 ;;lista di tutti i costumi di un tipo (da vedova, da sposa ecc.);
