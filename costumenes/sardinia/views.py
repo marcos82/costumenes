@@ -89,5 +89,17 @@ def get_lastest(n):
 	resp = simplejson.dump(lastest)
 	return HttpResponse (resp, "application/json")
 
+def get_all_sex(s):
+	ls = []
+	lista = Photo.objects.all().filter(sesso=s).distinct('comune')
+	for a in lista:
+		ls.append({"comune":a.comune, "foto":a.pk, "sesso":a.sesso, "tipo":a.tipologia})
+
+	resp=simplejson(ls)
+	return HttpResponse (resp, "application/json")
+
+
+
+
 
 
