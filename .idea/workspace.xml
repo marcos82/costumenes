@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de33d4fe-1bcd-42ca-b04a-3a5ef52d3ede" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/costumenes/sardinia/views.py" afterPath="$PROJECT_DIR$/costumenes/sardinia/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/costumenes/costumenes/urls.py" afterPath="$PROJECT_DIR$/costumenes/costumenes/urls.py" />
     </list>
     <ignored path="costumenes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -12,6 +11,7 @@
     <file path="/Python Console" changelist="de33d4fe-1bcd-42ca-b04a-3a5ef52d3ede" time="1361039558977" ignored="false" />
     <file path="/models.py" changelist="de33d4fe-1bcd-42ca-b04a-3a5ef52d3ede" time="1361038537155" ignored="false" />
     <file path="/a.py" changelist="de33d4fe-1bcd-42ca-b04a-3a5ef52d3ede" time="1361639811616" ignored="false" />
+    <file path="/urls.py" changelist="de33d4fe-1bcd-42ca-b04a-3a5ef52d3ede" time="1361752742931" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,13 +28,22 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/costumenes/sardinia/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="3" selection-start="2660" selection-end="2660" vertical-scroll-proportion="0.56558776">
+            <state line="115" column="25" selection-start="2881" selection-end="2881" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#1#85#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/costumenes/costumenes/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="45" selection-start="230" selection-end="230" vertical-scroll-proportion="0.2044293">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -68,6 +77,7 @@
       <list>
         <option value="$PROJECT_DIR$/costumenes/sardinia/models.py" />
         <option value="$PROJECT_DIR$/costumenes/sardinia/views.py" />
+        <option value="$PROJECT_DIR$/costumenes/costumenes/urls.py" />
       </list>
     </option>
   </component>
@@ -166,6 +176,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sardinia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="costumenes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="costumenes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="costumenes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="costumenes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -470,10 +498,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/costumenes/sardinia/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="3" selection-start="2660" selection-end="2660" vertical-scroll-proportion="0.56558776">
+        <state line="115" column="25" selection-start="2881" selection-end="2881" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#1#85#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/costumenes/costumenes/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="45" selection-start="230" selection-end="230" vertical-scroll-proportion="0.2044293">
+          <folding />
         </state>
       </provider>
     </entry>
