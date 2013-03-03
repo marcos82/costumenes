@@ -8,32 +8,34 @@ from django.db.models import Q
 
 from sardinia.models import Comune
 from sardinia.models import Photo
-from sardinia.models import SARDINIA_REGIONS
+from sardinia.models import SARDINIA_REGIONS, SARDINIA_PROVINCES
 
 
-def get_regioni():
-	pr = []
-	regioni = SARDINIA_REGIONS
-	for a in regioni:
-		pr.append(a[0])
+'''
+	Returns a list of 'regioni'
+'''
+def get_regioni(request):
+	regioni = []
+	sardinia_regions = SARDINIA_REGIONS
+	for regione in sardinia_regions:
+		regioni.append(regione[0])
 
-	resp = simplejson.dump(pr)
-	return HttpResponse (resp, response_type="applications/json")
+	resp = simplejson.dumps(regioni)
+	return HttpResponse (resp, content_type="applications/json")
 
+'''
+	Returns a list of 'province'
+'''
+def get_province(request):
+	province = []
+	sardinia_provinces = SARDINIA_PROVINCES
+	for provincia in sardinia_provinces:
+		province.append(provincia[0])
 
+	resp = simplejson.dumps(province)
+	return HttpResponse (resp, content_type="applications/json")
 
-
-def get_province():
-	pl = []
-	province = SARDINIA_PROVINCES
-	for a in province:
-		pl.append(a[0])
-
-
-	resp = simplejson.dump(pl)
-	return HttpResponse(resp, response_type="application/json")
-
-def get_comuni():
+def get_comuni(request):
 	comuni_json = []
 	comuni = Comune.objects.all()
 
@@ -47,7 +49,7 @@ def get_comuni():
 	return HttpResponse (resp, response_type="application/json")
 
 
-def get_comune_regione(rg):
+def get_comune_regione(request, rg):
 	cr = []
 	comune = Comune.objects.filter(regione=rg)
 	for a in comune:
@@ -56,7 +58,7 @@ def get_comune_regione(rg):
 	resp = simplejson.dump(cr)
 	return HttpResponse (resp, response_type="application/json")
 
-def get_comune_province(pr):
+def get_comune_province(request, pr):
 	cp = []
 	comune=Comune.objects.filter(provincia=pr)
 	for a in comune:
@@ -67,7 +69,7 @@ def get_comune_province(pr):
 
 
 
-def get_tipicostume_comune(co):
+def get_tipicostume_comune(request, co):
 
 	tipi = []
 	dict = {}
@@ -80,7 +82,7 @@ def get_tipicostume_comune(co):
 	resp = simplejson.dump(dict)
 	return HttpResponse (resp, "applicatione/json")
 
-def get_lastest(n):
+def get_lastest(request, n):
 	lastest = []
 	lista = Photo.objects.all().order_by('data_inserimento').distinct('comune')
 	for a in lista[0:n]:
@@ -89,7 +91,7 @@ def get_lastest(n):
 	resp = simplejson.dump(lastest)
 	return HttpResponse (resp, "application/json")
 
-def get_all_sex(s):
+def get_all_sex(request, s):
 	ls = []
 	lista = Photo.objects.all().filter(sesso=s).distinct('comune')
 	for a in lista:
@@ -98,7 +100,7 @@ def get_all_sex(s):
 	resp=simplejson(ls)
 	return HttpResponse (resp, "application/json")
 
-def get_genere(comu, sess):
+def get_genere(request, comu, sess):
 	ls = []
 	lista = Photo.objects.all().filter(comune=comu).filter(sesso=sess)
 	for a in lista:
@@ -107,7 +109,7 @@ def get_genere(comu, sess):
 	resp=simplejson(ls)
 	return HttpResponse (resp, "application/json")
 
-def get_types(comu):
+def get_types(request, comu):
 	ls = []
 	lista = Photo.objects.all().filter(comune=comu).distinct('tipologia')
 	for a in lista:

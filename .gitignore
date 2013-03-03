@@ -2,3 +2,7 @@
 *.py~
 *./idea
 .idea
+/*/.pyc
+/*/*/.pyc
+/*/.py~
+/*/*/.py~

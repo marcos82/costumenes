@@ -6,9 +6,11 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
 
+	url(r'^costumenes/', include('sardinia.urls')),
+
 	(r'^comuni/$', 'sardinia.views.get_comuni'),
-	(r'^regioni/$', 'sardinia.views.get_regioni'),
-	(r'^province/$', 'sardinia.views.get_province'),
+
+
 	(r'^comuni_regione/(?P<rg>\w+)/$', 'sardinia.views.get_comune_regione'),
 	(r'^comuni_province/(?P<pr>\w+)/$', 'sardinia.views.get_comune_province'),
 	(r'^tipologie_comune/(?P<pr>\w+)/$', 'sardinia.views.get_types'),
