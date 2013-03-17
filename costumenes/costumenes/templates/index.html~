@@ -57,8 +57,9 @@ body{
 $(function(){
 	$('#ultimi').spinner().change(function(){
 		var lastest = $.getJSON('/lastestp/'+$(this).spinner('value'), function(data){
+		$('#listaultimi').append("")
 		$.each(data, function(i, value) {
-		var html= '<h3>' + data[i].comune + '</h3><br><h2>Costume ' +data[i].sesso+'</h2><br>'+data[i].tipo+'<br><br>'
+		var html= '<h3>' + data[i].comune + '</h3><br><p>Costume ' +data[i].sesso+'</p><br>'+data[i].tipo+'<br><br>'
 		$('#listaultimi').append(html)
 		});
 		});
