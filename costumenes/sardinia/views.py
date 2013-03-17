@@ -4,12 +4,15 @@ from django.utils import simplejson
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 from django.db.models import Q
+from django.shortcuts import render
 
 
 from sardinia.models import Comune
 from sardinia.models import Photo
 from sardinia.models import SARDINIA_REGIONS, SARDINIA_PROVINCES
 
+def home(request):
+    return render(request, 'index.html')
 
 '''
 	Returns a list of 'regioni'
@@ -40,10 +43,10 @@ def get_comuni(request):
 	comuni = Comune.objects.all()
 
 	for comune in comuni:
-		dict = {}
-		dict['id'] = comune.pk
-		dict['nome'] = comune.nome
-		comuni_json.append(dict)
+		#dict = {}
+		#dict['id'] = comune.pk
+		#dict['nome'] = comune.nome
+		comuni_json.append(comune)
 
 	resp = simplejson.dump(comuni_json)
 	return HttpResponse (resp, response_type="application/json")
@@ -86,9 +89,9 @@ def get_lastest(request, n):
 	lastest = []
 	lista = Photo.objects.all().order_by('data_inserimento').distinct('comune')
 	for a in lista[0:n]:
-		lastest.append({"comune":a.comune,"foto":a.pk,"sesso":a.sesso, "tipo":a.tipo})
+		lastest.append({"comune":a.comune,"foto":a.pk,"sesso":a.sesso, "tipo":a.tipologia})
 
-	resp = simplejson.dump(lastest)
+	resp = simplejson.dumps(lastest)
 	return HttpResponse (resp, "application/json")
 
 def get_all_sex(request, s):
@@ -119,4 +122,13 @@ def get_types(request, comu):
 	return HttpResponse (resp, "application/json")
 
 
+def get_lastest_photo(request, n):
+    lista=[]
+    dict = {}
+    picture = Photo.objects.all().order_by("data_inserimento")
+    for i in picture[:n]:
+        comune = i.comune.nome
+        lista.append({"comune":comune, "tipo":i.tipologia, "sesso":i.sesso})
 
+    resp = simplejson.dumps(lista)
+    return HttpResponse(resp, "application/json")

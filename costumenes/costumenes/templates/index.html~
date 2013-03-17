@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Home - Costumenes</title>
+	<link rel="stylesheet" href="/static/css/main.css" type="text/css" />
+	<link rel="stylesheet" href="/static/css/nivo-slider.css" type="text/css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="media/styles/ie.css" type="text/css" /><![endif]-->
+	<script src="/static/js/jquery.js" type="text/javascript"></script>
+	<script src="/static/js/jquery.min.js" type="text/javascript"></script>
+	<script src="/static/js/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+	<script src="/static/js/jquery-ui-1.10.2.custom.js"></script>
+	<link href="/static/css/jquery-ui-1.10.2.custom.css" rel="stylesheet">
+	<script src="/static/js/blanka.js" type="text/javascript"></script>
+</head>
+<style>
+body{
+		font: 62.5% "Trebuchet MS", sans-serif;
+		margin: 50px;
+	}
+	.demoHeaders {
+		margin-top: 2em;
+	}
+	#dialog-link {
+		padding: .4em 1em .4em 20px;
+		text-decoration: none;
+		position: relative;
+	}
+	#dialog-link span.ui-icon {
+		margin: 0 5px 0 0;
+		position: absolute;
+		left: .2em;
+		top: 50%;
+		margin-top: -8px;
+	}
+	#icons {
+		margin: 0;
+		padding: 0;
+	}
+	#icons li {
+		margin: 2px;
+		position: relative;
+		padding: 4px 0;
+		cursor: pointer;
+		float: left;
+		list-style: none;
+	}
+	#icons span.ui-icon {
+		float: left;
+		margin: 0 4px;
+	}
+	.fakewindowcontain .ui-widget-overlay {
+		position: absolute;
+	}
+</style>
+<script>
+$(function(){
+	$('#ultimi').spinner().change(function(){
+		var lastest = $.getJSON('/lastestp/'+$(this).spinner('value'), function(data){
+		$.each(data, function(i, value) {
+		var html= '<h3>' + data[i].comune + '</h3><br><h2>Costume ' +data[i].sesso+'</h2><br>'+data[i].tipo+'<br><br>'
+		$('#listaultimi').append(html)
+		});
+		});
+	});
+});
+		
+	
+
+	$(document).ready(function(){
+
+	var prov = $.getJSON('/province/', function(data){
+	$.each(data, function(i, value) {
+	var html = '<h3>' + value + '</h3>';
+  	$('#province').append(html)
+	});
+	});
+	
+	var reg = $.getJSON('/regioni/', function(data){
+	$.each(data, function(i, value) {
+	var html = '<p>' + value + '</p>';
+	$('#regioni').append(html)	
+	});
+	});
+	
+	});
+
+
+  </script>
+<body>
+	<div id="header">
+		<div class="inner cf">
+			<form method="post" action="#" class="search">
+				<fieldset>
+					<legend>Search</legend>
+					<input type="text" name="search" value="" />
+					<input type="image" name="submit" src="/static/img/search/button.png" alt="Search" />
+				</fieldset>
+			</form>
+
+			<div id="navigation">
+				<ul>
+					<li class="current-menu-item"><a href="index.html">home</a></li>
+					<li>
+						<a href="#">seconda voce</a>
+						<ul>
+							<li><a href="#">&raquo; menu option one</a></li>
+							<li><a href="#">&raquo; menu option two</a></li>
+							<li><a href="#">&raquo; menu option three</a></li>
+							<li><a href="#">&raquo; menu option four</a></li>
+							<li><a href="#">&raquo; menu option five</a></li>
+						</ul>
+					</li>
+					<li><a href="">il progetto</a></li>
+					<li><a href="">lascia un commento</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<hr />
+
+	<div id="content" class="home">
+		<div class="inner">
+			<div id="logo" class="section logo">
+				<h1>
+					<a href="#">
+						<img src="/static/img/sardigna.png"  />
+					</a>
+				</h1>
+			</div>
+
+			<h2><span>About</span></h2>
+
+			<div class="section about">
+				<h3>Benvenuti in Costumenes</h3>
+
+				<p>Qui potrete trovare tutti i costumi della sardegna</p>
+				<a href="#" class="continue">read more &raquo;</a>
+			</div>
+
+			<hr />
+
+			<h2><span>Categorie</span></h2>
+
+			<div class="section">
+				<ol class="works-list">
+					<li class="thumb">
+						<div class="thumb-inner">
+							<a href="#">
+								<img src="/static/img/works/thumb.png" width="200" height="145" alt="" />
+							</a>
+						</div>
+					</li>
+					<li class="thumb">
+						<div class="thumb-inner">
+							<a href="#">
+								<img src="/static/img/works/thumb.png" width="200" height="145" alt="" />
+							</a>
+						</div>
+					</li>
+					<li class="thumb">
+						<div class="thumb-inner">
+							<a href="#">
+								<img src="/static/img/works/thumb.png" width="200" height="145" alt="" />
+							</a>
+						</div>
+					</li>
+					<li class="thumb">
+						<div class="thumb-inner">
+							<a href="#">
+								<img src="/static/img/works/thumb.png" width="200" height="145" alt="" />
+							</a>
+						</div>
+					</li>
+				</ol>
+			</div>
+
+			<hr />
+
+			<h2><span>Altro</span></h2>
+			
+			<div class="section more">
+				<div class="text">
+				<div id="province">
+
+					<h3 class="with-icon checkmark"><a href="#">Province</a></h3>
+
+				</div></div>
+				<div class="text">
+				<div id="regioni">
+					<h3 class="with-icon checkmark"><a href="#">Regioni</a></h3>
+
+					
+
+				</div></div>
+				<div class="text">
+					<h3 class="with-icon checkmark"><a href="#">Ultimi inseriti</a></h3>
+					<p>
+ 					 <label for="ultimi">scegli quanti vuoi visualizzarne</label>
+  					 <select id="ultimi" name="ultimi">
+    					<option value="1">1</option>
+    					<option value="2">2</option>
+    					<option value="3">3</option>
+    					<option value="4">4</option>
+    					<option value="5">5</option>
+    					<option value="6">6</option>
+    					<option value="7">7</option>
+    					<option value="8">8</option>
+    					<option value="9">9</option>
+    					<option value="10">10</option>
+  					 </select>
+				   </p>
+
+				<div id="listaultimi"></div>
+				</div>
+
+			</div>
+
+			<hr />
+
+			<h2><span>Social</span></h2>
+
+			<div class="section blog">
+				<ol class="latest-posts">
+					<li class="post">
+						<div class="text">
+							<h3><a href="#">Facebook</a></h3>
+
+							<p>Ultime condivisioni su facebook</p>
+
+
+						</div>
+					</li>
+					<li class="post">
+						<div class="text">
+							<h3><a href="#">Google+</a></h3>
+
+							<p>Ultime condivisione su google plus</p>
+
+
+						</div>
+					</li>
+					<li class="post">
+						<div class="text">
+							<h3><a href="#">Twitter</a></h3>
+
+							<p>Ultime twittate</p>
+
+
+						</div>
+					</li>
+				</ol>
+
+				<hr />
+
+				<div class="tweet text">
+					<p>what do you look for in a <a href="#">#wordpress</a> theme? either  premium or free. What features do you find the most important?</p>
+
+					<span class="meta">About 19 hours ago</span>
+
+					<span class="follow">Follow <a href="#">@blankatheme</a> on twitter</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<hr />
+
+	<div id="footer">
+		<div class="inner">
+			<p>
+				<span>&copy; 2013 by <a href="#">Costumenes de Sardigna</a></span>
+				
+			</p>
+		</div>
+	</div>
+</body>
+</html>
