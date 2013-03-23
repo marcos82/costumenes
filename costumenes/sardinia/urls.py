@@ -1,4 +1,6 @@
-from django.conf.urls import patterns, url
+from django.conf.urls.defaults import *
+from django.contrib import admin
+admin.autodiscover()
 
 from sardinia import views
 
