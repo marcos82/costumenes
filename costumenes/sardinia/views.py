@@ -35,18 +35,21 @@ def get_province(request):
 	resp = simplejson.dumps(province)
 	return HttpResponse (resp, content_type="applications/json")
 
+'''
+	Returns the list of 'comuni'. Only comuni with at least a photo
+	are retrieved
+'''
 def get_comuni(request):
 	comuni_json = []
-	comuni = Comune.objects.all()
-
-	for comune in comuni:
+	photos = Photo.objects.only("comune").distinct()
+	for photo in photos:
 		dict = {}
-		dict['id'] = comune.pk
-		dict['nome'] = comune.nome
+		dict['id'] = photo.comune.pk
+		dict['nome'] = photo.comune.nome
 		comuni_json.append(dict)
 
-	resp = simplejson.dump(comuni_json)
-	return HttpResponse (resp, response_type="application/json")
+	resp = simplejson.dumps(comuni_json)
+	return HttpResponse (resp, content_type="application/json")
 
 
 def get_comune_regione(request, rg):
