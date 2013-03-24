@@ -108,3 +108,35 @@ class Photo(models.Model):
     class Meta:
         verbose_name_plural = "foto"
 
+"""
+Definisce una categoria da associare al model gallery di foto.
+La categoria permette di definire il numero max di foto da presentare nella gallery.
+Le foto tipicamente sono ciclate mediante script javascript, percui se il limite max di foto e'
+per esempio 3, e si caricano in tutto 5 immagini, le restanti 2 verrano visualizzate
+al secondo ciclo
+"""
+class Category(models.Model):
+    nome_category = models.CharField(max_length=255)
+    max_photo = models.IntegerField()
+
+    def __unicode__(self):
+        return '%s - %s' % (self.nome_category, self.max_photo)
+
+    class Meta:
+        verbose_name_plural = 'categorie'
+
+"""
+Definisce una gallery di foto (da mostrare per esempio nella home page ecc)
+Ciascuna gallery ha una categoria di appartenenza
+"""
+class Gallery(models.Model):
+    nome_gallery = models.CharField(max_length=255)
+    img = models.ImageField("path immagine", upload_to="foto_gallery")
+    category = models.ForeignKey(Category)
+
+    def __unicode__(self):
+        return '%s - %s' % (self.nome_gallery, self.categoria.nome_category)
+
+    class Meta:
+        verbose_name_plural = 'gallery'
+
